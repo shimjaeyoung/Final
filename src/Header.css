@@ -1,0 +1,95 @@
+.header {
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+  position: sticky;
+  background-color: white;
+  z-index: 100;
+  top: 0;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+/* 헤더의 왼쪽부분 (검색창과 페이스북 아이콘)균등하게 평행하게 위치 시키기 */
+.header__left > img {
+  height: 40px;
+}
+/* 검색창 꾸미기 */
+.header__input {
+  display: flex;
+  align-items: center;
+  background-color: #eff2f5;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 999px;
+}
+
+/* 페이스북 아이콘 사이즈조절 */
+.header__left > img {
+  height: 40px;
+}
+
+/* 검색창 투명하게 만들기 */
+.header__input > input {
+  border: none;
+  background-color: transparent;
+  outline-width: 0;
+}
+
+/* 센터부분 아이콘 평행하게 위치시키기 (간격 조절) */
+.header__center {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+/* 모든 아이콘에 적용 */
+.header__option > .MuiSvgIcon-root {
+  color: gray;
+}
+
+/* 마우스 가져다 댔을 때 색상 변경 시키기(hover) */
+.header__option:hover > .MuiSvgIcon-root {
+  color: #2e81f4;
+}
+
+/* 클릭했을 때 아이콘 파랗게 변하도록 지정*/
+.header__option--active > .MuiSvgIcon-root {
+  color: #2e81f4;
+}
+
+/* 클릭했을 때 아이콘 밑에 파란 줄 생기도록 지정 */
+.header__option--active {
+  border-bottom: 4px solid #2e81f4;
+}
+
+/* 아이콘 배열 적용 */
+.header__option {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+/* 마우스 가져다 댔을 때 아이콘의 배경색이 회색으로 변하도록 지정 */
+.header__option:hover {
+  background-color: #eff2f5;
+  border-radius: 10px;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: none;
+}
+
+/* 우측 아이콘 정렬 */
+.header__info {
+  display: flex;
+  align-items: center;
+}
+/* 프로필 이름 설정 */
+.header__info > h4 {
+  margin-left: 10px;
+}
+
+/* 헤더우측부분 평행하게 정렬 */
+.header__right {
+  display: flex;
+}
